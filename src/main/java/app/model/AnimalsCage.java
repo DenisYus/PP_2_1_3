@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 public class AnimalsCage {
     private Animal animal;
     private Timer timer;
-    @Autowired
+
     public AnimalsCage (@Qualifier("dog") Animal animal,
-                        @Qualifier("timer") Timer timer) {
+                        Timer timer) {
         this.animal = animal;
         this.timer = timer;
     }
